@@ -36,7 +36,7 @@ class Register extends Component {
               name="name"
               placeholder="Name"
               required
-              value={email}
+              value={name}
               onChange={this.handleChange}
             />
           </Form.Field>
