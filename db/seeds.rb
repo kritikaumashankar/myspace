@@ -1,25 +1,25 @@
-# 10.times do
-#   name= Faker::Friends.character
-#   location= Faker::WorldCup.city
-#   bio="Ddefault bio"
-#   quotes=Faker::Friends.quote
-#   avatar=Faker::Avatar.image(name, '100x200', 'png', 'set4')
-#   User.create(email:"#{name}@gmail.com"name: name, location: location, bio: bio, quotes: quotes, avatar: avatar)
-# end
+5.times do
+  name= Faker::HarryPotter.character
+  location= Faker::HarryPotter.location
+  bio="Ddefault bio"
+  quotes=Faker::HarryPotter.quote
+  password="$2a$11$lRLs./dG7FVA/krtdEz0ceFR0Dlo.SvwNjc3C4OXFZcDhOgvw8ysy"
+  avatar=Faker::Avatar.image(name, '100x200', 'png', 'set4')
+  User.create(email:"#{name}@gmail.com",name: name,password:password, location: location, bio: bio, quotes: quotes, avatar: avatar)
+end
+5.times do
+  name= Faker::Friends.character
+  location= Faker::Friends.location
+  bio="Ddefault bio"
+  quotes=Faker::Friends.quote
+  password="$2a$11$lRLs./dG7FVA/krtdEz0ceFR0Dlo.SvwNjc3C4OXFZcDhOgvw8ysy"
+  avatar=Faker::Avatar.image(name, '100x200', 'png', 'set4')
+  User.create(email:"#{name}@gmail.com",name: name,password:password, location: location, bio: bio, quotes: quotes, avatar: avatar)
+end
 
-# 10.times do
-#   name= Faker::HowIMetYourMother.character
-#   location= Faker::WorldCup.city
-#   bio= Faker::HowIMetYourMother.catch_phrase
-#   quotes=Faker::HowIMetYourMother.quote
-#   avatar=Faker::Avatar.image(name, '100x200', 'png', 'set4')
-#   Friend.create(name: name, location: location, bio: bio, quotes: quotes, avatar: avatar)
-# end
-
-# 30.times do
-#   description = Faker::Lorem.paragraph 
-#   likes = rand(10..99)
-#    user_id = rand(1..2)
-#   friend_id = rand(21..40)
-#   Post.create(description: description, likes: likes, user_id: user_id, friend_id: friend_id)
-# end
+50.times do
+  description = Faker::Lorem.paragraph 
+  likes = rand(10..99)
+   user_id = rand(1..User.all.count)
+  Post.create(description: description, likes: likes, user_id: user_id)
+end

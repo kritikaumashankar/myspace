@@ -8,6 +8,9 @@ import store from './store';
 import 'semantic-ui-css/semantic.min.css';
 import { initMiddleware } from 'devise-axios';
 import ScrollToTop from './components/ScrollToTop';
+import JavascriptTimeAgo from 'javascript-time-ago'
+import en from 'javascript-time-ago/locale/en'
+JavascriptTimeAgo.locale(en)
 
 initMiddleware()
 

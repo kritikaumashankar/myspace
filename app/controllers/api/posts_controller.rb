@@ -1,5 +1,5 @@
 class Api::PostsController < ApplicationController
-  # before_action :authenticate_user! 
+   before_action :authenticate_user! 
   before_action :post_index
   before_action :set_post, except: [:index, :create]
 
@@ -45,7 +45,7 @@ class Api::PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:description, :likes)
+    params.require(:post).permit(:description, :likes,user_id:current_user.id)
   end
 
 end

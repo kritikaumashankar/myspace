@@ -1,0 +1,39 @@
+.alignment{
+  display: flex;
+  justify-content: space-around;
+}
+
+.home{
+  display: flex;
+  justify-content: space-around;
+}
+
+.friendsContainer{
+  margin: 2em;
+
+}
+
+.friendCard{
+  margin: 50px;
+  
+}
+.friendContent img.ui.image{
+  width:15em;
+  margin: 10px 25em;
+}
+
+.friendContent{
+  margin: 100px;
+  text-align: center;
+}
+
+.home .ui.segment{
+  height: 100%;
+  margin-top:50px;
+}
+.home .ui.segment:first-child {
+  margin-top: 50px;
+}
+.displayPost-nth-cild{
+display: block;
+}
