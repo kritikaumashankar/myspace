@@ -12,7 +12,7 @@ class NavBar extends Component {
       return (
         <Menu pointing secondary>
         <Menu.Menu>
-        <Header as='h2' textAlign="center"><i>MySpace</i></Header>
+        <Header as='h2' textAlign="center"><i>K-Network</i></Header>
         </Menu.Menu>
         <Menu.Menu position='left'>
           <Link to='/'>
